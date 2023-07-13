@@ -5,8 +5,13 @@
 package paquete11;
 
 public class Principal {
+
     public static void main(String[] args) {
-        
+        String nombreArchivo = "Usuarios.txt";
+        LecturaArchivo lectura = new LecturaArchivo(nombreArchivo);
+        lectura.establecerLista();
+        System.out.println(lectura);
+        System.out.println(" == == == == == == ==");
         /*
         Usar el txt llamado usuarios.txt; por cada línea del archivo
         crer un API en función de su servicio; además el API ahora genera
@@ -15,8 +20,7 @@ public class Principal {
         Random); la url final debe contener el tipo de servicio y el user
         Por cada objeto de tipo GeneradoPelicula presentar la información 
         a través de un toString
-        */
-        
-        
+         */
+
     }
 }
